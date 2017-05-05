@@ -1,0 +1,27 @@
+//
+//  ServiceBarPCH.pch
+//  WCGServiceBar
+//
+//  Created by Wcg on 2017/5/5.
+//  Copyright © 2017年 吴朝刚. All rights reserved.
+//
+
+#ifndef ServiceBarPCH_pch
+#define ServiceBarPCH_pch
+#import "UIView+LDExtention.h"
+#import "NSString+LDExtention.h"
+
+#define WCGServiceBarHeight 46
+
+#define WCGFont(font) [UIFont systemFontOfSize:(font)]
+
+#define WCGScreenWidth [UIScreen mainScreen].bounds.size.width
+#define WCGScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#define WCGColorBlack [UIColor blackColor]
+#define WCGColorRGB(r,g,b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1.0f]
+#define WCGColorGray WCGColorRGB(243, 243, 243)
+
+#define WCGWeakSelf __weak typeof(self) weakSelf = self;
+
+#endif /* ServiceBarPCH_pch */

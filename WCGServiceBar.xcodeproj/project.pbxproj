@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		946375F77726B6522EF02DF0 /* libPods-WCGServiceBar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1105D6D0B24988EFD9C2DDA8 /* libPods-WCGServiceBar.a */; };
 		DDA8EDBF1EBC1D640032C235 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA8EDBE1EBC1D640032C235 /* main.m */; };
 		DDA8EDC21EBC1D640032C235 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA8EDC11EBC1D640032C235 /* AppDelegate.m */; };
 		DDA8EDC51EBC1D640032C235 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA8EDC41EBC1D640032C235 /* ViewController.m */; };
@@ -16,6 +17,11 @@
 		DDA8EDD01EBC1D640032C235 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDA8EDCE1EBC1D640032C235 /* LaunchScreen.storyboard */; };
 		DDA8EDDB1EBC1D640032C235 /* WCGServiceBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA8EDDA1EBC1D640032C235 /* WCGServiceBarTests.m */; };
 		DDA8EDE61EBC1D640032C235 /* WCGServiceBarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA8EDE51EBC1D640032C235 /* WCGServiceBarUITests.m */; };
+		DDA8EDFA1EBC239B0032C235 /* WCGServiceBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA8EDF51EBC239B0032C235 /* WCGServiceBar.m */; };
+		DDA8EE011EBC24510032C235 /* WCGServiceBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA8EDFE1EBC24510032C235 /* WCGServiceBtnView.m */; };
+		DDA8EE021EBC24510032C235 /* WCGServicePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA8EE001EBC24510032C235 /* WCGServicePanel.m */; };
+		DDA8EE051EBC26320032C235 /* UIView+LDExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA8EE041EBC26320032C235 /* UIView+LDExtention.m */; };
+		DDA8EE091EBC279A0032C235 /* NSString+LDExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA8EE081EBC279A0032C235 /* NSString+LDExtention.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1105D6D0B24988EFD9C2DDA8 /* libPods-WCGServiceBar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WCGServiceBar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22C6D73CB7A5D1DDE4C69D0A /* Pods-WCGServiceBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WCGServiceBar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WCGServiceBar/Pods-WCGServiceBar.debug.xcconfig"; sourceTree = "<group>"; };
+		51B25C299CDB4D1CD43D5038 /* Pods-WCGServiceBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WCGServiceBar.release.xcconfig"; path = "Pods/Target Support Files/Pods-WCGServiceBar/Pods-WCGServiceBar.release.xcconfig"; sourceTree = "<group>"; };
 		DDA8EDBA1EBC1D640032C235 /* WCGServiceBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WCGServiceBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDA8EDBE1EBC1D640032C235 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DDA8EDC01EBC1D640032C235 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +62,17 @@
 		DDA8EDE11EBC1D640032C235 /* WCGServiceBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WCGServiceBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDA8EDE51EBC1D640032C235 /* WCGServiceBarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCGServiceBarUITests.m; sourceTree = "<group>"; };
 		DDA8EDE71EBC1D640032C235 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDA8EDF41EBC239B0032C235 /* WCGServiceBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCGServiceBar.h; sourceTree = "<group>"; };
+		DDA8EDF51EBC239B0032C235 /* WCGServiceBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCGServiceBar.m; sourceTree = "<group>"; };
+		DDA8EDFD1EBC24510032C235 /* WCGServiceBtnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCGServiceBtnView.h; sourceTree = "<group>"; };
+		DDA8EDFE1EBC24510032C235 /* WCGServiceBtnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCGServiceBtnView.m; sourceTree = "<group>"; };
+		DDA8EDFF1EBC24510032C235 /* WCGServicePanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCGServicePanel.h; sourceTree = "<group>"; };
+		DDA8EE001EBC24510032C235 /* WCGServicePanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCGServicePanel.m; sourceTree = "<group>"; };
+		DDA8EE031EBC26320032C235 /* UIView+LDExtention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LDExtention.h"; sourceTree = "<group>"; };
+		DDA8EE041EBC26320032C235 /* UIView+LDExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LDExtention.m"; sourceTree = "<group>"; };
+		DDA8EE061EBC26780032C235 /* ServiceBarPCH.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServiceBarPCH.pch; sourceTree = "<group>"; };
+		DDA8EE071EBC279A0032C235 /* NSString+LDExtention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LDExtention.h"; sourceTree = "<group>"; };
+		DDA8EE081EBC279A0032C235 /* NSString+LDExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LDExtention.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				946375F77726B6522EF02DF0 /* libPods-WCGServiceBar.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +101,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32011A7373AABCE116246073 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1105D6D0B24988EFD9C2DDA8 /* libPods-WCGServiceBar.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DDA8EDB11EBC1D640032C235 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +116,8 @@
 				DDA8EDD91EBC1D640032C235 /* WCGServiceBarTests */,
 				DDA8EDE41EBC1D640032C235 /* WCGServiceBarUITests */,
 				DDA8EDBB1EBC1D640032C235 /* Products */,
+				EBDCD1E5F2C5E7737DE11FF2 /* Pods */,
+				32011A7373AABCE116246073 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +134,7 @@
 		DDA8EDBC1EBC1D640032C235 /* WCGServiceBar */ = {
 			isa = PBXGroup;
 			children = (
+				DDA8EDF31EBC237F0032C235 /* ServiceBar */,
 				DDA8EDC01EBC1D640032C235 /* AppDelegate.h */,
 				DDA8EDC11EBC1D640032C235 /* AppDelegate.m */,
 				DDA8EDC31EBC1D640032C235 /* ViewController.h */,
@@ -143,6 +175,33 @@
 			path = WCGServiceBarUITests;
 			sourceTree = "<group>";
 		};
+		DDA8EDF31EBC237F0032C235 /* ServiceBar */ = {
+			isa = PBXGroup;
+			children = (
+				DDA8EE031EBC26320032C235 /* UIView+LDExtention.h */,
+				DDA8EE041EBC26320032C235 /* UIView+LDExtention.m */,
+				DDA8EE071EBC279A0032C235 /* NSString+LDExtention.h */,
+				DDA8EE081EBC279A0032C235 /* NSString+LDExtention.m */,
+				DDA8EDF41EBC239B0032C235 /* WCGServiceBar.h */,
+				DDA8EDF51EBC239B0032C235 /* WCGServiceBar.m */,
+				DDA8EDFD1EBC24510032C235 /* WCGServiceBtnView.h */,
+				DDA8EDFE1EBC24510032C235 /* WCGServiceBtnView.m */,
+				DDA8EDFF1EBC24510032C235 /* WCGServicePanel.h */,
+				DDA8EE001EBC24510032C235 /* WCGServicePanel.m */,
+				DDA8EE061EBC26780032C235 /* ServiceBarPCH.pch */,
+			);
+			path = ServiceBar;
+			sourceTree = "<group>";
+		};
+		EBDCD1E5F2C5E7737DE11FF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22C6D73CB7A5D1DDE4C69D0A /* Pods-WCGServiceBar.debug.xcconfig */,
+				51B25C299CDB4D1CD43D5038 /* Pods-WCGServiceBar.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +209,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDA8EDEA1EBC1D640032C235 /* Build configuration list for PBXNativeTarget "WCGServiceBar" */;
 			buildPhases = (
+				05BA10D7B0D96BD2CBA5994F /* [CP] Check Pods Manifest.lock */,
 				DDA8EDB61EBC1D640032C235 /* Sources */,
 				DDA8EDB71EBC1D640032C235 /* Frameworks */,
 				DDA8EDB81EBC1D640032C235 /* Resources */,
+				84E5E5762D9FE7DEF408403D /* [CP] Embed Pods Frameworks */,
+				C47847EAD75E7D41B7C704F9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -274,15 +336,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		05BA10D7B0D96BD2CBA5994F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		84E5E5762D9FE7DEF408403D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WCGServiceBar/Pods-WCGServiceBar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C47847EAD75E7D41B7C704F9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WCGServiceBar/Pods-WCGServiceBar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DDA8EDB61EBC1D640032C235 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DDA8EDC51EBC1D640032C235 /* ViewController.m in Sources */,
+				DDA8EE051EBC26320032C235 /* UIView+LDExtention.m in Sources */,
 				DDA8EDCB1EBC1D640032C235 /* WCGServiceBar.xcdatamodeld in Sources */,
 				DDA8EDC21EBC1D640032C235 /* AppDelegate.m in Sources */,
+				DDA8EE011EBC24510032C235 /* WCGServiceBtnView.m in Sources */,
+				DDA8EE021EBC24510032C235 /* WCGServicePanel.m in Sources */,
+				DDA8EE091EBC279A0032C235 /* NSString+LDExtention.m in Sources */,
 				DDA8EDBF1EBC1D640032C235 /* main.m in Sources */,
+				DDA8EDFA1EBC239B0032C235 /* WCGServiceBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,9 +544,12 @@
 		};
 		DDA8EDEB1EBC1D640032C235 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22C6D73CB7A5D1DDE4C69D0A /* Pods-WCGServiceBar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2PQZ63LPW6;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/n1p_/wcgLR/WCGServiceBar/WCGServiceBar/ServiceBar/ServiceBarPCH.pch;
 				INFOPLIST_FILE = WCGServiceBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.wcg.com.WCGServiceBar;
@@ -441,9 +559,12 @@
 		};
 		DDA8EDEC1EBC1D640032C235 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51B25C299CDB4D1CD43D5038 /* Pods-WCGServiceBar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2PQZ63LPW6;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/n1p_/wcgLR/WCGServiceBar/WCGServiceBar/ServiceBar/ServiceBarPCH.pch;
 				INFOPLIST_FILE = WCGServiceBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.wcg.com.WCGServiceBar;
@@ -520,6 +641,7 @@
 				DDA8EDEC1EBC1D640032C235 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DDA8EDED1EBC1D640032C235 /* Build configuration list for PBXNativeTarget "WCGServiceBarTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +650,7 @@
 				DDA8EDEF1EBC1D640032C235 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DDA8EDF01EBC1D640032C235 /* Build configuration list for PBXNativeTarget "WCGServiceBarUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +659,7 @@
 				DDA8EDF21EBC1D640032C235 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
