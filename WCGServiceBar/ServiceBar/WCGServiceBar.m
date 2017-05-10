@@ -38,6 +38,7 @@
 
 static const CGFloat keyBoradW = 36;
 static const CGFloat incrementTag = 100;
+static const CGFloat lineW = 0.5;
 
 #pragma mark - setter getter
 - (NSMutableArray *)menuBtns{
@@ -69,7 +70,7 @@ static const CGFloat incrementTag = 100;
     //菜单栏创建模型
     NSInteger sectionCount = self.menuArr.count;
     
-    CGFloat btnW = (WCGScreenWidth - keyBoradW - 16) / sectionCount;
+    CGFloat btnW = (WCGScreenWidth - keyBoradW - 16 - sectionCount * lineW) / sectionCount * 1.0;
     
     NSInteger section = 0;
     for (NSString *sectionTitle in self.menuArr) {
@@ -79,16 +80,22 @@ static const CGFloat incrementTag = 100;
         btnV.title = sectionTitle;
         btnV.tag = section + incrementTag;
         [self.contentView addSubview:btnV];
+        [self.menuBtns addObject:btnV];
         [btnV mas_makeConstraints:^(MASConstraintMaker *make) {
             make.bottom.mas_equalTo(self.contentView);
             make.top.mas_equalTo(self.topLine.mas_bottom);
-            make.width.mas_equalTo(btnW);
+            if (section == sectionCount - 1) {
+                make.right.mas_equalTo(self.contentView.mas_right);
+            }else{
+                make.width.mas_equalTo(btnW);
+            }
             if (_masnoryView == _keyBoardBtn) {
                 make.left.mas_equalTo(self.contentView);
             }else{
                 make.left.mas_equalTo(_masnoryView.mas_right);
             }
         }];
+        _masnoryView = btnV;
         
         //测试数据
         NSString *menuName0 = [NSString stringWithFormat:@"主%ld子菜单0",section];
@@ -98,24 +105,24 @@ static const CGFloat incrementTag = 100;
             btnV.subMenus = @[menuName0,menuName1,menuName2];
         }
         
-        [self.menuBtns addObject:btnV];
-        _masnoryView = btnV;
-        
         if (self.menuArr.count - 1 > section) {
             UIView *line = [UIView new];
             line.backgroundColor = [UIColor lightGrayColor];
+            [self.contentView addSubview:line];
             [self.lines addObject:line];
-            [self addSubview:line];
             [line mas_makeConstraints:^(MASConstraintMaker *make) {
                 
                 make.left.mas_equalTo(_masnoryView.mas_right);
                 make.top.mas_equalTo(self.topLine.mas_bottom);
-                make.bottom.mas_equalTo(self);
-                make.width.mas_equalTo(0.5);
+                make.bottom.mas_equalTo(self.contentView.mas_bottom);
+                make.width.mas_equalTo(lineW);
             }];
+            _masnoryView = line;
         }
         section ++;
     }
+    
+    [self layoutIfNeeded];
 }
 
 #pragma mark - init
@@ -168,7 +175,7 @@ static const CGFloat incrementTag = 100;
        
         make.left.mas_equalTo(_masnoryView.mas_right).offset(8);
         make.top.bottom.mas_equalTo(self);
-        make.width.mas_equalTo(0.5);
+        make.width.mas_equalTo(lineW);
     }];
     
     _contentView = [[UIView alloc] init];
@@ -189,7 +196,7 @@ static const CGFloat incrementTag = 100;
         make.top.mas_equalTo(self.contentView);
         make.right.mas_equalTo(self.contentView);
         make.width.mas_equalTo(WCGScreenWidth);
-        make.height.mas_equalTo(0.5);
+        make.height.mas_equalTo(lineW);
     }];
 }
 

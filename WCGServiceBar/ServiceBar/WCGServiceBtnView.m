@@ -60,7 +60,7 @@
     [self insertSubview:self.panel atIndex:0];
     
     [self.panel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(self);
+        make.top.mas_equalTo(self).offset(WCGServiceBarHeight);
         make.centerX.mas_equalTo(self.mas_centerX);
         make.size.mas_equalTo(CGSizeMake(self.panel.panelWidth, self.panel.panelHeight));
     }];
@@ -145,7 +145,7 @@
             
             [weakSelf.panel mas_updateConstraints:^(MASConstraintMaker *make) {
                 
-                make.top.mas_equalTo(self);
+                make.top.mas_equalTo(self).offset(WCGServiceBarHeight);
             }];
             
             [weakSelf layoutIfNeeded];
